@@ -34,17 +34,22 @@ A movie discovery app built with **UIKit**, **MVVM-C**, **Repository Pattern**, 
 
 ```text
 MovieVault
+├── Config
 ├── Coordinator
 ├── Core
 │   ├── Common
 │   ├── Components
 │   ├── Extensions
 │   └── Networking
+│       ├── Endpoints
+│       ├── Models
+│       ├── Repository
+│       └── Services
 ├── Features
 │   ├── Home
 │   ├── Detail
 │   └── MovieList
-└── Config
+└── Resources
 ```
 
 ---
