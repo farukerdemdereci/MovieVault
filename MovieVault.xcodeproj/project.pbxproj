@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EBFE2EE32FF8000C005926C0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EBFE2EE22FF8000C005926C0 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBAE26A330124F5F00CE5127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB611F522FF4085000516811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB611F592FF4085000516811;
+			remoteInfo = MovieVault;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EB611F5A2FF4085000516811 /* MovieVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAE269F30124F5F00CE5127 /* MovieVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +44,28 @@
 			path = MovieVault;
 			sourceTree = "<group>";
 		};
+		EBAE26A030124F5F00CE5127 /* MovieVaultTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MovieVaultTests;
+			sourceTree = "<group>";
+		};
+		EBAE26AF30138C5200CE5127 /* Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EB611F572FF4085000516811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFE2EE32FF8000C005926C0 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAE269C30124F5F00CE5127 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +78,9 @@
 		EB611F512FF4085000516811 = {
 			isa = PBXGroup;
 			children = (
+				EBAE26AF30138C5200CE5127 /* Config */,
 				EB611F5C2FF4085000516811 /* MovieVault */,
+				EBAE26A030124F5F00CE5127 /* MovieVaultTests */,
 				EB611F5B2FF4085000516811 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				EB611F5A2FF4085000516811 /* MovieVault.app */,
+				EBAE269F30124F5F00CE5127 /* MovieVaultTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,13 +111,38 @@
 			);
 			fileSystemSynchronizedGroups = (
 				EB611F5C2FF4085000516811 /* MovieVault */,
+				EBAE26AF30138C5200CE5127 /* Config */,
 			);
 			name = MovieVault;
 			packageProductDependencies = (
+				EBFE2EE22FF8000C005926C0 /* Kingfisher */,
 			);
 			productName = MovieVault;
 			productReference = EB611F5A2FF4085000516811 /* MovieVault.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EBAE269E30124F5F00CE5127 /* MovieVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAE26A730124F5F00CE5127 /* Build configuration list for PBXNativeTarget "MovieVaultTests" */;
+			buildPhases = (
+				EBAE269B30124F5F00CE5127 /* Sources */,
+				EBAE269C30124F5F00CE5127 /* Frameworks */,
+				EBAE269D30124F5F00CE5127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBAE26A430124F5F00CE5127 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EBAE26A030124F5F00CE5127 /* MovieVaultTests */,
+			);
+			name = MovieVaultTests;
+			packageProductDependencies = (
+			);
+			productName = MovieVaultTests;
+			productReference = EBAE269F30124F5F00CE5127 /* MovieVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +157,10 @@
 					EB611F592FF4085000516811 = {
 						CreatedOnToolsVersion = 26.3;
 					};
+					EBAE269E30124F5F00CE5127 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = EB611F592FF4085000516811;
+					};
 				};
 			};
 			buildConfigurationList = EB611F552FF4085000516811 /* Build configuration list for PBXProject "MovieVault" */;
@@ -107,18 +172,29 @@
 			);
 			mainGroup = EB611F512FF4085000516811;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EBFE2EE12FF8000C005926C0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EB611F5B2FF4085000516811 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EB611F592FF4085000516811 /* MovieVault */,
+				EBAE269E30124F5F00CE5127 /* MovieVaultTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB611F582FF4085000516811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAE269D30124F5F00CE5127 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +211,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBAE269B30124F5F00CE5127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBAE26A430124F5F00CE5127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB611F592FF4085000516811 /* MovieVault */;
+			targetProxy = EBAE26A330124F5F00CE5127 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EB611F6E2FF4085200516811 /* Debug */ = {
@@ -150,7 +241,6 @@
 				INFOPLIST_FILE = MovieVault/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -182,7 +272,6 @@
 				INFOPLIST_FILE = MovieVault/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -204,6 +293,8 @@
 		};
 		EB611F702FF4085200516811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EBAE26AF30138C5200CE5127 /* Config */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -268,6 +359,8 @@
 		};
 		EB611F712FF4085200516811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = EBAE26AF30138C5200CE5127 /* Config */;
+			baseConfigurationReferenceRelativePath = Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -323,6 +416,48 @@
 			};
 			name = Release;
 		};
+		EBAE26A530124F5F00CE5127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6K727HY3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = farukerdemdereci.MovieVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieVault";
+			};
+			name = Debug;
+		};
+		EBAE26A630124F5F00CE5127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6K727HY3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = farukerdemdereci.MovieVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieVault";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,7 +479,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EBAE26A730124F5F00CE5127 /* Build configuration list for PBXNativeTarget "MovieVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAE26A530124F5F00CE5127 /* Debug */,
+				EBAE26A630124F5F00CE5127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBFE2EE12FF8000C005926C0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBFE2EE22FF8000C005926C0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBFE2EE12FF8000C005926C0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB611F522FF4085000516811 /* Project object */;
 }

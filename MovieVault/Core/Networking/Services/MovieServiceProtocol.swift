@@ -1,0 +1,15 @@
+//
+//  FetchMoviesProtocol.swift
+//  MovieVault
+//
+//  Created by Faruk on 1.07.2026.
+//
+
+import Foundation
+
+protocol MovieServiceProtocol {
+    func fetchMovies(_ endpoint: MovieEndpoint, page: Int) async throws -> MovieResponse
+    func fetchMovieDetails(id: Int) async throws -> MovieDetail
+    func fetchMovieCast(id: Int) async throws -> CastResponse
+    func fetchMovieVideos(id: Int) async throws -> MovieVideosResponse
+}
