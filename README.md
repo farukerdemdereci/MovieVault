@@ -8,6 +8,7 @@ A movie discovery app built with **UIKit**, **MVVM-C**, **Repository Pattern**, 
   <img src="Screenshots/home.png" width="250"/>
   <img src="Screenshots/detail.png" width="250"/>
 </p>
+
 ---
 
 ## Features
@@ -71,10 +72,3 @@ TMDB_TOKEN = YOUR_API_KEY
 4. Run the project.
 
 ---
-
-## Tests
-
-- Repository Tests
-- HomeViewModel Tests
-- DetailViewModel Tests
-- MovieListViewModel Tests
